@@ -2,15 +2,15 @@
 nixPkgs = [
   "php",
   "phpPackages.composer",
-  "php81Packages.curl",
-  "php81Packages.mbstring",
-  "php81Packages.xml",
-  "php81Packages.pdo",
-  "php81Packages.mysql",
-  "php81Packages.openssl",
-  "php81Packages.tokenizer",
-  "php81Packages.bcmath",
-  "php81Packages.ctype"
+  "phpPackages.curl",
+  "phpPackages.mbstring",
+  "phpPackages.xml",
+  "phpPackages.pdo",
+  "phpPackages.mysql",
+  "phpPackages.openssl",
+  "phpPackages.tokenizer",
+  "phpPackages.bcmath",
+  "phpPackages.ctype"
 ]
 
 [phases.build]
