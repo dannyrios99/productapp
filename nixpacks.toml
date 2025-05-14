@@ -1,5 +1,17 @@
 [phases.setup]
-nixPkgs = ["php", "phpPackages.composer", "mysql"]
+nixPkgs = [
+  "php",
+  "phpPackages.composer",
+  "php81Packages.curl",
+  "php81Packages.mbstring",
+  "php81Packages.xml",
+  "php81Packages.pdo",
+  "php81Packages.mysql",
+  "php81Packages.openssl",
+  "php81Packages.tokenizer",
+  "php81Packages.bcmath",
+  "php81Packages.ctype"
+]
 
 [phases.build]
 cmds = [
