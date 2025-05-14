@@ -4,6 +4,12 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\CarritoController;
 use App\Http\Controllers\PedidoController;
+use Illuminate\Support\Facades\Artisan;
+
+Route::get('/migrar', function () {
+    Artisan::call('migrate', ['--force' => true]);
+    return 'Migraciones ejecutadas exitosamente.';
+});
 
 Route::get('/', [ProductoController::class, 'index'])->name('index');
 
