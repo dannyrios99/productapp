@@ -3,7 +3,7 @@ nixPkgs = ["php", "phpPackages.composer"]
 
 [phases.build]
 cmds = [
-    "composer install --no-dev --optimize-autoloader",
+  "composer install --no-dev --optimize-autoloader",
 ]
 
 [phases.start]
